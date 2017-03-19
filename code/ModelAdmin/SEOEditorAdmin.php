@@ -100,6 +100,7 @@ class SEOEditorAdmin extends ModelAdmin
             $config->getComponentByType('GridFieldDataColumns')->setDisplayFields(
                 array(
                     'ID' => 'ID',
+                    'Parent.Title' => 'Parent',
                     'Title' => 'Title',
                 )
             );
@@ -109,6 +110,7 @@ class SEOEditorAdmin extends ModelAdmin
                     'before',
                     array(
                         'ID' => 'ID',
+                        'Parent.Title' => 'Parent',
                         'Title' => 'Title',
                         'MetaTitle' => 'MetaTitle',
                         'MetaDescription' => 'MetaDescription'
